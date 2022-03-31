@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Modern Sans';
+    src: url(./fonts/ModernSans-Light.otf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Bold.ttf);
+}
+body {
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.con-tables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  width: 60%;
+  margin-bottom: 30px;
+  border: 1px solid #483D8B;
+  border-spacing: 0px;
+  border-radius: 5px;
+margin-top: 50px;
+}
+
+abbr {
+  cursor: help;
+  text-decoration: underline;
+}
+td{
+    text-align: justify;
+    padding: 5px;
+    font-family: 'Modern Sans';
+}
+td,
+th {
+  border-style: solid;
+  border-width: 1px;
+}
+table caption {
+  font-size: 120%;
+  font-weight: bold;
+}
+caption {
+  color: #7B68EE;
+  padding-bottom: 30px;
+  font-family: 'Lato';
+}
+tr{
+    transition: 0.6s;
+}
+td,
+th {
+  border-color: #483D8B;
+}
+tr:hover {
+  background-color: #483D8B;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+th {
+  background-color: #483D8B;
+  color: white;
+  font-weight: bold;
+  border-right-color: white;
+  padding: 10px;
+  font-family: 'Lato';
+}
+.menu{
+    margin-left: 5vw;
+}
+.menu h2{
+    font-family: 'Lato';
+}
+ul{
+    list-style: none;
+    font-family: 'Modern Sans';
+}
+li{
+    padding-bottom: 10px;
+}
+li a:hover{
+    color: #7b68ee;
+    text-decoration: underline;
+
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+#title-sect {
+  color: #7b68ee;
+  text-align: center;
+  font-family: 'Lato';
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#title-sect h1{
+    font-size: 3rem;
+}
+.proj-desc {
+  text-align: right;
+
+}
+@keyframes down {
+    0%{
+        transform: translateY(0px);  
+    }
+    25%{
+        transform: translateY(3px);  
+
+    }
+    50%{
+        transform: translateY(6px);  
+    }
+    75%{
+        transform: translateY(3px);  
+    }
+    100%{
+        transform: translateY(0px);  
+    }
+}
+i{
+    color: white;
+    font-size: 2rem;
+    margin-top: 40px;
+    transform: rotate(180deg);
+    animation-name: down;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+footer{
+    width: 100vw;
+    background-color: #7B68EE;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Modern Sans';
+    font-style: italic;
+    padding: 20px;
+}
