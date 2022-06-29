@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio sesión │ Arca </title>
+    <link rel="stylesheet" href="../css/iniciosesion.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../assets/img/Logos/Logo TEXT.svg">
+</head>
+
+<body>
+    <img class="imgwave" src="../assets/img/arca login.png">
+    <div class="container">
+        <div class="login-content">
+            <form action="../model/login.php" method="post">
+                <h2>Inicia sesión<span style="color: #483D8B; font-size: 50px;">.</span></h2>
+                <p>¿No tienes cuenta? <a class="reg" href="../view/viewregister.php">Registrate.</a> </p>
+                <select name="fk_pk_tipo_documentoU" id="fk_pk_tipo_documentoU" required>
+                    <option value="">Tipo de documento</option>
+                    <option value="CC">Cedula de ciudadania</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="CE">Cedula de extranjeria</option>
+                </select>
+                <div class="input-div one">
+                    <div class="div">
+                        <input type="text" name="documento_U" id="documento_U" placeholder="Número de documento"required >
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="div">
+                        <input type="password" name="claveU" id="claveU" placeholder="Contraseña" required >
+                    </div>
+                </div>
+                <a class="olcon" href="vistaolvidarcont.html">¿Olvidaste tu contraseña?</a>
+                <a class="btn2" href="../index.html">Volver</a>
+                <input type="submit" class="btn" value="Ingresar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

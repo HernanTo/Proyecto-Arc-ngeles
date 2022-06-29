@@ -1,0 +1,89 @@
+.con-panel{
+    grid-column: 2/21;
+    grid-row: 3/21;
+    display: grid;
+    grid-template-columns: 65%;
+    grid-template-rows: 12% 70%;
+    gap: 2%;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Calendario*/
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 13.63%);
+    grid-template-rows: repeat(11, 8%);
+    align-content: center;
+    gap: 7px;
+}
+.calendar .col-calendar{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #7b68ee;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+.cell-calendar{
+    background: #e6e6fa;
+    border-radius: 5px;
+}
+.row-one{
+    grid-row: 2/4;
+}
+.row-two{
+    grid-row: 4/6;
+}
+.row-three{
+    grid-row: 6/8;
+}
+.row-four{
+    grid-row: 8/10;
+}
+.row-five{
+    grid-row: 10/12;
+}
+.cell-calendar{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+}
+.number-ca{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.ico-ca{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.ico-ca .fi-sr-ambulance{
+    font-size: 2.6rem;
+    color: #7b68ee;
+}
+
+/*Información Calendario*/
+.info-calendar{
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+}
+.info-calendar span{
+    /* border: 3px solid black; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.child-info:nth-child(2){
+    grid-column: 2/7;
+    font-family: 'Poppins',  sans-serif;
+    font-size: 1.2rem;
+}
+.child-info .fi-sr-angle-left, .child-info .fi-sr-angle-right{
+    font-size: 2rem;
+    color: #7B68EE;
+}

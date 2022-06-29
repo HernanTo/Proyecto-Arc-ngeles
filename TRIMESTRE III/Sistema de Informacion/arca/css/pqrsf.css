@@ -1,0 +1,64 @@
+.item-panel-3 {
+    background-color: #e6e6e6;
+    border-radius: 10vh 0 0 10vh;
+  }
+  .item-panel-3 p,
+  .item-panel-3 i {
+    color: #483d8b;
+  }
+  .con-panel {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(17, 10%);
+  }
+  .con-info-usu {
+    grid-column: 2/10;
+    grid-row: 2/10;
+  }
+  .con-info-usu h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+  }
+  .con-info-usu hr {
+    border: 2px solid #483d8b;
+    border-radius: 5px;
+  }
+  
+  .table-info-adm {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border: 2px solid #483d8b;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  .table-info-adm td,
+  .table-info-adm th {
+    border-width: 2px;
+    border-color: #483d8b;
+    border-style: solid;
+    padding: 5px;
+  
+  }
+  
+  .table-info-adm thead {
+    background-color: #483d8b;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  .table-info-adm tbody{
+      color: black;
+      font-family: 'Nunito', sans-serif;
+  }
+  /* .table-col-func{
+      width: 60px;
+  } */
+  .table-fun a{
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      font-size: 18px;
+      text-decoration: none;
+      color: #483d8b;
+  }

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.imgwave {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #17202A;
+    font-size: 18px;
+    line-height: 2cm;
+}
+
+.reg {
+    font-family: 'Nunito', sans-serif;
+    color: #483D8B;
+    text-decoration: none;
+}
+
+.login-content{
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.login-content form{
+    transform: scale(1.1);
+}
+
+form {
+    width: 360px;
+    margin-left:25rem;
+}
+
+.login-content h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0;
+    color: #17202A;
+    font-size: 2rem;
+    line-height: 0.2cm;
+}
+
+.btn {
+    width: 120px;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #483D8B;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #4c4292;
+}
+
+.btn2 {
+    text-decoration: none;
+    padding: 10px;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #F4F6F7;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #4c4292;
+}
+
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 6% 20%;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.input-div input,
+select {
+    border: 1px solid #F4F6F7;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: white;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+.input-div input:focus,
+select:focus {
+    outline: none;
+    border-color: #483D8B;
+}
+
+.olcon {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    color: #17202A;
+    font-size: 0.8rem;
+    text-decoration: none;
+}

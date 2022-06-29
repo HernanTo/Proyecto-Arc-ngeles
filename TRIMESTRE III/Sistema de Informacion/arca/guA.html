@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/panel.css" />
+    <link rel="stylesheet" href="./assets/icons/css/uicons-solid-rounded.css">
+    <link rel="shortcut icon" href="./assets/img/Logos/Logo TEXT.svg">
+    <link rel="stylesheet" href="./css/guA.css">
+  </head>
+  <body>
+    <main>
+      <div class="contenedor">
+        <header>
+          <section class="item-logo">
+              <figure><img src="./assets/img/Logos/Logo TEXT.svg" alt=""></figure>
+          </section>
+          <a href="./guA.html" class="item-panel item-panel-1">
+              <i class="fi-sr-head-side-thinking icon-panel"></i>
+              <p href="">Gestion de Usuarios</p>
+          </a>
+          <a href="./" class="item-panel item-panel-2">
+              <i class="fi-sr-user-add icon-panel"></i>
+              <p href="">S. Pacientes Nuevos</p>
+          </a>
+          <a href="./view/pqrsf.php" class="item-panel item-panel-3">
+              <i class="fi-sr-comment-alt icon-panel"></i>
+              <p href="">PQRSF</p>
+          </a>
+          <a href="" class="item-panel item-panel-4">
+              <i class="fi-sr-interrogation icon-panel"></i>
+              <p href="">Ayuda</p>
+          </a>
+      </header>
+        <article class="con-head">
+          <section class="con-name-pag"><h2>Panel</h2></section>
+          <section class="con-user-info">
+            <h3>Nombre User</h3>
+            <a href="">CERRAR SESIÓN</a>
+          </section>
+          <section class="con-photo-p">
+            <figure><img src="../assets/img/userPhotos/DC.png" alt="" /></figure>
+          </section>
+        </article>
+
+        <!-- Contendor -->
+        <article class="con-panel">
+          <section class="con-filtro">
+            <h1>Gestión Usuarios</h1>
+            <div class="con-form">
+
+              <form action="./view/panelSearchU.php" method="post" id="form-search-u">
+                <h2>Buscar usuario</h2>
+                <br>
+                <select name="tipo-docume-fil" id="tipo-docume-fil" required>
+                  <option value="">Selecciona un tipo de documento</option>
+                  <option value="TI">TI</option>
+                  <option value="CC">CC</option>
+                  <option value="CE">CE</option>
+                </select>
+                <br><br>
+                <input type="number" name="num-doc-fil" id="num-doc-fil" placeholder="Número de documento">
+                <br><br>  <br>
+                <input type="submit" value="Buscar" class="btn-fil">
+                <br>
+              </form>
+
+
+              <form action="./view/panelSearchRolAd.php" method="post">
+                <h2>Buscar por roles</h2>
+                <select name="tipo-rol-fil" id="tipo-rol-fil" required>
+                  <option value="">Selecciona un rol</option>
+                  <option value="1">Administradores</option>
+                  <option value="2">Secretarias</option>
+                  <option value="3">Doctores</option>
+                  <option value="4">Pacientes</option>
+                </select>
+                <input type="submit" value="Buscar" class="btn-fil">
+              </form>
+
+
+
+              <form action="./view/newUser.php" method="post" id="form-new-u">
+                <h2>Crear nuevo usuario</h2>
+                <select name="rol-user-new" id="" required>
+                  <option hidden selected>Seleccione el tipo de cuenta</option>
+                  <option value="1">Administrador</option>
+                  <option value="2">Secretaria</option>
+                  <option value="3">Doctor</option>
+                  <option value="4">Paciente</option>
+                </select>
+                <select name="tipo-docume-user-new" id="tipo-docume-user-new" required>
+                  <option value="">Selecciona un tipo de documento</option>
+                  <option value="TI">TI</option>
+                  <option value="CC">CC</option>
+                  <option value="CE">CE</option>
+                </select>
+                <input type="number" name="number-doc-user-new" id="number-user-new" placeholder="Número de documento" required>
+                <input type="text" name="p-name-user-new" id="p-name-user-new" placeholder="Primer Nombre" required>
+                <input type="text" name="s-name-user-new" id="s-name-user-new" placeholder="Segundo Nombre" >
+                <input type="text" name="p-lasname-user-new" id="p-lasname-user-new" placeholder="Primer Apellido" required>
+                <input type="text" name="s-lasname-user-new" id="s-lasname-user-new" placeholder="Segundo Apellido" >
+                <input type="date" name="fechaNacimiento_U" placeholder="dd-mm-yyyy" value="" max="2020-12-31">
+                <input type="email" name="email-user-new" id="email-user-new" placeholder="Correo Electrónico" required>
+                <input type="tel" name="cel-user-new" id="cel-user-new" placeholder="Número de celular" required>
+                <br>
+                <input type="submit" value="Buscar" class="btn-fil">
+                <br>
+              </form>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

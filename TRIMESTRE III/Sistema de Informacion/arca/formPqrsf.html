@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pqrs.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./assets/img/Logos/Logo TEXT.svg">
+</head>
+
+<body>
+    <form method="post" action="./model/modelPqrsf.php">
+        <div class="contenedor">
+            <h1>Bienvenido a el modulo de PQRSF</h1>
+            <p>Este formulario esta destinado a presentar peticiones de cada usario, responda los campos necesarios para hacer un mejor siguimiento de su petición</p>
+            <br>
+            <p class="txtColor">Informacion del afectado</p>
+            <hr>
+            <br>
+            <div class="contendores">
+                <select name="tp_documento" required>
+                <option disabled selected>--Tipo de documento--</option>
+                <option value="">Texto de prueba</option>
+            </select>
+                <input type="text" name="n_document" placeholder="Número de documento" required>
+            </div>
+            <div class="contendores">
+                <input type="text" name="pr_name" placeholder="Primer nombre" required>
+                <input type="text" name="sg_name" placeholder="Segundo nombre" required>
+                <input type="text" name="pr_apellido" placeholder="Primer apellido" required>
+                <input type="text" name="sg_apellido" placeholder="Segundo apellido" required>
+            </div>
+            <div class="contendores">
+                <input type="text" name="n_telefonico" placeholder="Numero telefonico" required>
+                <input type="text" name="tl_fijo" placeholder="Telfono fijo" required>
+                <input type="email" name="cr_electronicos" placeholder="Correo electronico" required>
+            </div>
+            <br>
+            <p class="txtColor">Detalle de la solicitud</p>
+            <hr>
+            <br>
+            <div class="contendores">
+                <select name="tp_solicitud" required>
+                <option disabled selected>--Tipo de solicitud--</option>
+
+                <option value=""></option>
+            </select>
+            </div>
+            <div class="contendores">
+                <input type="date" name="fc_radicacion" placeholder="Fecha de radicacion" required>
+                <input type="text" name="fc_motivo" placeholder="Motivo del PQRSF" required>
+            </div>
+            <div class="contendores">
+                <textarea rows="" cols="" name="fc_detalle" placeholder="Detalle del PQRSF" class="textArea" required></textarea>
+            </div>
+            <div class="contendores">
+                <input type="file" name="archivo" placeholder="Adjuntar archivos*" required>
+                <p>*No es necesario adjuntar soporte</p>
+            </div>
+            <div class="contendores" style="text-align: center;">
+                <input type="button" name="Volver" class="Btn" value="Volver">
+                <input type="submit" name="Enviar" class="Btn2" value="Enviar">
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>

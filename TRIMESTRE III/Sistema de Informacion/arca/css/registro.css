@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100%;
+    background-color: #F7F7F7;
+}
+
+/*División de pagina*/
+.form {
+    background-color: #F7F7F7;
+    text-align: right;
+    margin-top: 1.2rem;
+    margin-right: 4rem;
+}
+
+.image {
+    background-color: #F7F7F7;
+}
+
+.grid-container {
+    grid-template-rows: 100vh;
+    grid-template-columns: 35% 65%;
+    display: grid;
+    grid-template-areas:
+    "image form";
+}
+
+.imgwave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+/*Formulario*/
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #17202A;
+    font-size: 18px;
+    line-height: 1.5cm;
+}
+
+.inse {
+    font-family: 'Nunito', sans-serif;
+    color: #483D8B;
+    text-decoration: none;
+}
+
+.login-content form{
+    transform: scale(1);
+}
+
+.login-content .input-div {
+    margin: 8px 0;
+}
+
+.login-content h2{
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0;
+    color: #17202A;
+    font-size: 2rem;
+    line-height: 0.2cm;
+}
+
+.input-div input, select{
+    border: 1px solid #E8E9EA;
+    width: 20rem;
+    height: 4rem;
+    background-color: #E8E9EA;
+    padding-left: 1rem;
+    padding-top: 5px;
+    border-radius: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+} 
+
+.input-div input:focus, select:focus {
+    outline: none;
+    border-color: #483D8B;
+} 
+
+.fecha {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+    padding-top: 5px;
+    padding-left: 6.7rem;
+	pointer-events: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.btn {
+    width: 40%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #483D8B;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+    background-color: #4c4292;
+}
+
+.btn2 {
+    width: 40%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #dbdbdb83;
+    font-size: 1rem;
+    color: rgba(39, 38, 38, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+    background-color: #4c4292;
+}

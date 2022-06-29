@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor-ol{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+}
+
+form {
+    width: 500px;
+    text-align: center;
+    line-height: 1.8cm;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: #17202A;
+    font-size: 1.8rem;
+    line-height: 0.2cm;
+}
+
+.login-content input,
+select {
+    border: 1px solid #F4F6F7;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #F4F6F7;
+    padding-left: 1rem;
+    border-radius: 2%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    
+}
+
+.login-content input:focus,
+select:focus {
+    outline: none;
+    border-color: #483D8B;
+}
+
+.btn {
+    width: 40%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #483D8B;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #4c4292;
+}
+
+.btn2 {
+    width: 40%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #f5ecf7;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn2:hover {
+    background-color: #c1bfd1;
+}
+
+

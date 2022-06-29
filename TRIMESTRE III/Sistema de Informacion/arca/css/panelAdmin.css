@@ -1,0 +1,25 @@
+.con-panel{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+}
+.con-welc{
+    grid-column: 2/6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.body-welc{
+    grid-row: 3/4;
+    grid-column: 2/10;
+}
+.body-welc h3{
+    font-family: 'Poppins', sans-serif;
+}
+.body-welc p{
+    font-family: 'Nunito', sans-serif;
+}
+ul li a{
+    text-decoration: none;
+    color: #483D8B;
+    font-family: 'Nunito', sans-serif;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introducción formularios web</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Un formulario sirve para enviar datos a otra página que los recoge para usarlos o almacenarlos."/>
+    <link rel="stylesheet" href="agendar_cita.css"> 
+    <style>
+
+    </style>
+
+</head>
+<body><div class="container">
+        <div class="login-content">
+            <form action="">
+               <h2>Agendar Cita<span style="color: #483D8B; font-size: 50px;"></span></h2> 
+               <hr>
+               <br>
+                <div class="input-div one">
+                    <div class="div">
+                        <label for="fecha">Fecha : <input type="date" placeholder="Fecha de radicacion"></label>
+                    </div>
+                    <form action="">
+                    <label for="Cita">Cita:</label> 
+                    <br>   
+                    <select name="TipoCita" required>
+                    <option value="">TipoCita</option>
+                    <option value="PS">Psicologia</option>
+                    <option value="CL">Control</option>
+                    <option value="TP">Terapia</option>
+                </select>
+    <div class="contendores " style="text-align: center;">
+    <input type="button" class="Btn" value="Cancelar">
+    <input type="button" class="Btn2" value="Agendar">
+</div>
+</form>
+
+</body>
+</html>
+

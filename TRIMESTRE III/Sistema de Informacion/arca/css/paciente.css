@@ -1,0 +1,282 @@
+/* Estructura */
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5 ,20vw);
+    grid-template-rows: repeat(20, 5vh);
+}
+ /* .con-head{
+    border-bottom: 3px solid black;
+} */
+header{
+    grid-column: 1/2;
+    grid-row: 1/21;
+    background: #483D8B;
+}
+.con-head{
+    grid-column: 2/21;
+    grid-row: 1/3;
+    background-color: white;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Cabecera cuerpo*/
+.con-head{
+    display: grid;
+    grid-template-columns: repeat(13, 6vw);
+    grid-template-rows: 10vh;
+}
+/* .con-head section{
+    border-right:  3px solid black;
+} */
+.con-name-pag{
+    grid-column: 2/5;
+    display: grid;
+    /* align-content: center;
+    justify-content: center; */
+}
+.con-name-pag h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    margin: 0px;
+    display: grid;
+    /* justify-content: center; */
+    align-content: center;
+}
+.con-user-info{
+    grid-column: 8/13;
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 2px;
+}
+.con-user-info h3{
+    font-size: 21px;
+    margin-top: 18px;
+    margin-right: 50px;
+}
+.con-user-info a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-right: 50px;
+    display: grid;
+    align-content: center;
+}
+.con-photo-p{
+    grid-column: 13/14;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.con-photo-p figure{
+    width: 80%;
+    height: 95%;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.con-photo-p figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.number-ca{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.ico-ca{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.ico-ca .fi-sr-ambulance{
+    font-size: 2.6rem;
+    color: #7b68ee;
+}
+
+/*Información Calendario*/
+.info-calendar{
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+}
+.info-calendar span{
+    /* border: 3px solid black; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.child-info:nth-child(2){
+    grid-column: 2/7;
+    font-family: 'Poppins',  sans-serif;
+    font-size: 1.2rem;
+}
+.child-info .fi-sr-angle-left, .child-info .fi-sr-angle-right{
+    font-size: 2rem;
+    color: #7B68EE;
+}
+
+/*Panel*/
+header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(20, 5vh);
+}
+.item-logo{
+    grid-row: 1/4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.item-logo figure{
+    /* margin: 0px; */
+    /* padding: 0px; */
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.item-logo figure img{
+    width: 150px;
+    margin-left: -125px;
+}
+.item-panel-1{
+    /* border: 3px solid white; */
+    grid-row: 6/8;
+}
+.item-panel-2{
+    grid-row: 8/10;
+}
+.item-panel-3{
+    grid-row: 10/12;
+    display: grid;
+}
+
+.item-panel-4{
+    grid-row: 18/20;
+    display: grid;
+}
+.item-panel{
+    display: grid;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 15% 60%;
+    column-gap: 5%;
+}
+.item-panel p{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+.icon-panel{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+/* Codigo para el item seleccionado en el panel
+    background-color: #e6e6e6;
+    border-radius: 10vh 0 0 10vh; */
+    
+header a{
+    text-decoration: none;
+}
+
+.con-panel{
+    grid-column: 2/21;
+    grid-row: 3/21;
+}
+
+.con-panel{
+    display: grid;
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: repeat(22, 4vh);
+}
+
+.con-panel-cita{
+    grid-column: 2/10;
+    grid-row: 3 / 5;
+    font-family: 'Poppins',  sans-serif;
+}
+
+.con-panel-cita > p{
+    display: inline-block;
+    color: #17202A;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.con-panel-cita > a{
+    position: relative;
+    color: #483D8B;
+    font-size: 30px;
+    text-decoration: none;
+    top: 10%;
+    left: 1%;
+}
+.con-panel-pacientes{
+    grid-column: 1/11;
+    grid-row: 6/21;
+}
+
+.con-panel-pacientes{
+    display: grid;
+    grid-template-columns: repeat(40, 2vw);
+    grid-template-rows: repeat(12, 4vh);
+}
+
+.con-panel-pacientes__cita{
+    grid-column: 5 / 37;
+    grid-row: 1 / 3;
+    font-family: 'Poppins',  sans-serif;
+}
+
+.con-panel-pacientes__cita > h3{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.con-panel-pacientes__citaTabla{
+    grid-column: 5 / 37;
+    grid-row: auto;
+    font-family: 'Poppins',  sans-serif;
+    font-size: 15.5px;
+    text-align: center;
+}
+
+.con-panel-pacientes__citaTabla{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.con-panel-pacientes__citaTabla tr > th, td{
+    border-bottom: 1px solid #17202A;
+}
+
+.con-panel-pacientes__citaTabla tr > th{
+    width: 15%;
+}
+
+tr:nth-child(even) {
+    background-color: #b5aaf8;
+  }
+
+.con-panel-pacientes__citaTabla tr > td a{
+    text-decoration: none;
+    color: #17202A;
+}
+
+.con-panel-pacientes__citaTabla tr > td:last-child > a:hover i{
+    color: #1800b2;
+}

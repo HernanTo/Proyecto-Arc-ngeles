@@ -1,0 +1,101 @@
+.con-panel{
+    display: grid;
+    grid-template-columns: repeat(15, 6vw);
+    grid-template-rows: 85vh;
+}
+
+/*Imagen usuario y boton*/
+.contenedor_perfil-usuario__Editar{
+    grid-column: 1/6;
+}
+
+.contenedor_perfil-usuario__Formulario{
+    grid-column: 6/15;
+}
+
+.contenedor_perfil-usuario__Editar  figure{
+    margin: 0;
+    position: relative;
+    top: 30%;
+    left: 31%;
+}
+
+.contenedor_perfil-usuario__Editar  figure img{
+    width: 10vw;
+}
+
+.contenedor_perfil-usuario__Editar  div{
+    display: inline-block;
+    position: relative;
+    background-color: #7B68EE;
+    border-radius: 100%;
+    width: 3.3vw;
+    height: 7vh;
+    left: 16vw;
+    top: 18vh;
+}
+
+.contenedor_perfil-usuario__Editar  div i{
+    color: #ffffff;
+    font-size: 4.5vh;
+    position: relative;
+    left: .66vw;
+    top: 1vh;
+    cursor: pointer;
+}
+
+.contenedor_perfil-usuario__Formulario  form  input{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: .7vw;
+    border: none;
+    width: 40vw;
+    height: 6vh;
+    padding-left: 2vw;
+    margin: 1.5vh 0;
+    padding-top: 1vh;
+}
+
+.contenedor_perfil-usuario__Formulario  form  input:last-child{
+    position: relative;
+    width: 7vw;
+    right: 19.5vw;
+    background-color: #483D8B;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding-left: .3vw;
+    bottom: 24vh;
+    cursor: pointer;
+}
+
+.contenedor_perfil-usuario__Formulario  form  input::placeholder{
+    color: #111111;
+    font-weight: lighter;
+    font-size: 3vh;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.contenedor_perfil-usuario__Formulario form  span h3{
+    position: relative;
+    top: 3vh;
+    font-weight: 800;
+    font-size: 5vh;
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor_perfil-usuario__Formulario  form  span:nth-child(2){
+    font-weight: 500;
+    font-size: 4vh;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+.btn-edit-profile{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0px;
+}

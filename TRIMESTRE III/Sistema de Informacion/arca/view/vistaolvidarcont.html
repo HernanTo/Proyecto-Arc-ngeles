@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperacion de contraseña │ Arca</title>
+    <link rel="stylesheet" href="../css/reccont.css">
+    <link rel="shortcut icon" href="../assets/img/Logos/Logo TEXT.svg">
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<div class="contenedor-ol">
+    <form action="../model/recuperarcont.php" method="post">
+            <h2>¿Olvidaste tu contraseña?</h2>
+            <select name="fk_pk_tipo_documentoU" id="fk_pk_tipo_documentoU" required>
+                <option value="">Tipo de documento</option>
+                <option value="CC">Cedula de ciudadania</option>
+                <option value="TI">Tarjeta de identidad</option>
+                <option value="CE">Cedula de extranjeria</option>
+            </select>
+            <div class="login-content">
+            <input  type="text" name="documento_U" id="documento_U" placeholder="Número de documento"required >
+        </div>
+        <div class="login-content">
+            <input  type="text" name="resp_preg" id="resp_preg" placeholder="Respuesta seguridad"required >
+        </div>
+            <input type="submit" class="btn" value="Recuperar contraseña">
+            <input type="button" value="Volver" class="btn2" onclick="location.href='../view/iniciosesion.html'">
+    </form>
+</div>
+</body>
+</html>

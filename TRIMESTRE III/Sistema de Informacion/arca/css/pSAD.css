@@ -1,0 +1,114 @@
+.item-panel-1 {
+  background-color: #e6e6e6;
+  border-radius: 10vh 0 0 10vh;
+}
+.item-panel-1 p,
+.item-panel-1 i {
+  color: #483d8b;
+}
+.con-panel {
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(17, 10%);
+}
+.con-info-usu {
+  grid-column: 2/20;
+  grid-row: 2/10;
+}
+.con-info-usu h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.con-info-usu hr {
+  border: 2px solid #483d8b;
+  border-radius: 5px;
+}
+
+.table-info-adm {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border: 2px solid #483d8b;
+  border-radius: 10px;
+  color: black;
+}
+
+.table-info-adm td,
+.table-info-adm th {
+  border-width: 2px;
+  border-color: #483d8b;
+  border-style: solid;
+  padding: 5px;
+
+}
+
+.table-info-adm thead {
+  background-color: #483d8b;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+.table-info-adm tbody{
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+/* .table-col-func{
+    width: 60px;
+} */
+.table-fun a{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #483d8b;
+}
+.actions{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 8%;
+  justify-content: center;
+}
+.actions a{
+  text-decoration: none;
+  border-radius: 5px;
+  display: 	grid;
+  justify-content: center;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.actions a i{
+  display: 	grid;
+  justify-content: center;
+  align-content: center;
+  color: white; 
+}
+.ac:nth-child(1){
+  background-color: gray;
+}
+.ac:nth-child(2){
+  background-color: #483d8b;
+}
+.ac:nth-child(3){
+  background-color: red;
+}
+.ac:hover{
+  transform: scale(1.06);
+}
+hr{
+   background: #483d8b;
+}
+.con-info-usu-see{
+  display: grid;
+  grid-template-columns: 30% 50%;
+  justify-content: center;
+  align-content: center;
+}
+.con-info-usu h2{
+  font-family: 'Poppins', sans-serif;
+  color: #483d8b;
+}
+.con-info-usu p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
